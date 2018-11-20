@@ -45,6 +45,11 @@
 					{% endfor %}
 				</div>
 				<p class="copyright">&copy; {{ site.time | date: '%Y' }} Proactive System Ltd </p>
+				<p class="copyright"> {{ site.data.footer.address }} </p>
+				<p class="copyright">
+						<a href="tel:{{ site.data.footer.tel }}"> {{ site.data.footer.tel }}</a>
+				</p>
+				<p class="copyright"> <a href="mailto:{{ site.data.footer.email }}">{{ site.data.footer.email }}</a> </p>
 			</div>
 		</footer>
 		<script>
