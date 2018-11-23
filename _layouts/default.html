@@ -45,10 +45,13 @@
 </head>
 
 <body>
+
+	<div class="cr cr-top cr-left cr-sticky cr-red">首月免費</div>
+
 	<header>
 		<div class="container">
-			<div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-banner.png" alt="Hydra Logo"
-					 width="95" height="33" /></a></div>
+			<!-- <div class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo-banner.png" alt="Hydra Logo"
+					 width="95" height="33" /></a></div> -->
 			{% include navigation.html %}
 		</div>
 	</header>
@@ -79,8 +82,6 @@
 			<p class="copyright"> <a href="mailto:{{ site.data.footer.email }}">{{ site.data.footer.email }}</a> </p>
 		</div>
 	</footer>
-
-
 	<script>
 		document.getElementById("open-nav").onclick = function () {
 			document.body.classList.toggle("nav-open");
