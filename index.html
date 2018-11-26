@@ -112,12 +112,28 @@ description: Jonny - 你既 24 小時宣傳助手
 
 	<section class="bottom-cta">
 		<h2 class="editable">首月免費</h2>
-		<div class="button alt"><a id="callUsNow" href="tel: {{ site.data.footer.tel }}">立即致電 3111 8703</a></div>
 
+		<div style="padding: 10px 0px">
+			<p>
+				<div class="button alt"><a id="tryNow" href="https://m.me/jonnymarketing?ref=demo" target="_blank">即刻試下</a></div>
+			</p>
+		</div>
+
+		<div style="padding: 10px 0px">
+			<p>
+				<div class="button alt"><a id="callUsNow" href="tel: {{ site.data.footer.tel }}">致電查詢 3111 8703</a></div>
+			</p>
+		</div>
 
 		<script type="text/javascript">
 			$(document).ready(function () {
 				$('#callUsNow').click(function () {
+					fbq('track', 'Lead');
+				});
+			});
+
+			$(document).ready(function () {
+				$('#tryNow').click(function () {
 					fbq('track', 'Lead');
 				});
 			});
